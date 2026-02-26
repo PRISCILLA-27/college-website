@@ -1,0 +1,302 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    background-color: #f4f7f9;
+}
+
+/* ================= HEADER + NAVBAR ================= */
+
+.header{
+    background:#15203b;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+}
+
+/* LOGO AREA */
+.logoArea{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logoArea img{
+    height:60px;
+}
+
+/* NAV */
+nav{
+    position:relative;
+    background:#15203b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 20px;
+
+}
+
+#navMenu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+#navMenu li a{
+    text-decoration:none;
+    color:white;
+    padding:8px 10px;
+    display:block;
+    transition:0.3s;
+}
+
+#navMenu li a:hover{
+    background:white;
+    color:#1e3a8a   ;
+}
+
+/* MENU ICON */
+.menuIcon{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+    color:white;
+}
+
+/* ================= TOP IMAGE ================= */
+
+.topImg img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+/* ================= BODY SECTION ================= */
+
+.innerBody{
+    padding:30px;
+    text-align:center;
+    background-color: #f4f7f9;
+}
+
+.overview{
+    color:#233c82;
+    margin-bottom:15px;
+}
+
+/* ****************** PROGRAMS-Offered TABLE ******************************* */
+
+.programs-offered{
+    padding:30px;
+    text-align:center;
+}
+
+.programs-offered h2{
+    margin-bottom:15px;
+    color:#233c82;
+}
+
+.programs-offered table{
+    width:95%;
+    margin:auto;
+    border-collapse:collapse;
+    border:4px solid #0b1f4d;
+    font-size:16px;
+}
+
+.programs-offered th{
+    padding:14px;
+    border:1px solid #d6dbe2;
+    font-weight:bold;
+    text-align:center;
+}
+
+.programs-offered td{
+    padding:14px;
+    border:1px solid #d6dbe2;
+    text-align:center;
+}
+
+
+.programs-offered a{
+    text-decoration:none;
+    color:#233c82;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.programs-offered a:hover{
+    color: red;
+}
+
+/* **************************** HOSTEL FEE TABLE ******************************** */
+/* ================= HOSTEL FEE TABLE ================= */
+
+.hostel-fee{
+    padding:30px;
+    text-align:center;
+}
+
+.hostel-fee h2{
+    margin-bottom:15px;
+    color:#233c82;
+}
+
+.hostel-fee table{
+    width:95%;
+    margin:auto;
+    border-collapse:collapse;
+    border:4px solid #0b1f4d;
+    font-size:16px;
+}
+
+.hostel-fee th{
+    padding:14px;
+    border:1px solid #d6dbe2;
+    font-weight:bold;
+    text-align:center;
+}
+
+.hostel-fee td{
+    padding:14px;
+    border:1px solid #d6dbe2;
+    text-align:center;
+}
+
+.hostel-fee tr:first-child th{
+    font-size:20px;
+    letter-spacing:1px;
+    background:white;
+}
+
+.hostel-fee tr:nth-child(2){
+    font-weight:bold;
+}
+
+/* LIGHT BLUE SHADED ROWS */
+.hostel-fee tr:nth-child(3),
+.hostel-fee tr:nth-child(7),
+.hostel-fee tr:nth-child(8),
+.hostel-fee tr:nth-child(9){
+    background:#dff4f6;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:40px 20px;
+    margin-top:40px;
+}
+
+.footer div{
+    width:220px;
+    margin:10px;
+}
+
+.footer h3{
+    margin-bottom:10px;
+}
+
+.footer ul,
+.footer ol{
+    margin-top:10px;
+}
+
+.footer li{
+    margin-bottom:6px;
+}
+
+.footer a{
+    color:#e2e8f0;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    color:yellow;
+}
+
+.followUs img{
+    margin-right:10px;
+}
+
+.footcopy{
+    width:100%;
+    text-align:center;
+    margin-bottom: 15px;
+    border-top:1px solid gray;
+    padding-top:15px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+
+    .menuIcon{
+        display:block;
+    }
+
+    nav ul{
+
+        flex-direction:column;
+        background:#15203b;
+        position:absolute;
+        top:60px;
+        right:0px;
+        width:160px;
+        text-align:center;
+        padding:5px 0;
+        overflow:hidden;
+        display: none;
+    }
+
+    nav ul li{
+        width:100%;
+        margin-left: 0;
+    }
+
+    nav ul li a{
+        display:block;        /* very important */
+        width:100%;
+        padding:12px 0;
+    }
+
+    nav ul li a:hover{
+        background:white;
+        color:#1e3a8a;
+    }
+
+    nav ul.show{
+        display:flex;
+    }
+
+    table{
+        text-align:center;
+        width: 85%;
+    }
+
+    .innerBody{
+        width:95%;
+    }
+
+    .footer{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+}
+
